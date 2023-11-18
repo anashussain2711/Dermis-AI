@@ -1,0 +1,45 @@
+.partners{
+    .inner{
+        max-width: 1800px;
+        padding: 100px 20px;
+        .heading{
+            color: $dark;
+            font-size: 50px;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+        .logos{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                top: 0;
+                bottom: 0;
+                left: 0;
+                background: linear-gradient(to left, transparent, $lightprim);
+                width: 400px;
+                z-index: 1;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                bottom: 0;
+                right: 0;
+                background: linear-gradient(to right, transparent, $lightprim);
+                width: 400px;
+                z-index: 1;
+            }
+            .logo{
+                mix-blend-mode: multiply;
+                width: 100%;
+                margin: 0 30px;
+            }
+        }
+    }
+    .slick-slider .slick-track,
+.slick-slider .slick-list {
+    transform: inherit !important;
+}
+}

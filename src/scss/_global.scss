@@ -1,0 +1,52 @@
+
+* {
+    outline:none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+  }
+  sub { 
+    top: 0.4em; 
+  }
+
+html, body { 
+    margin:0;
+    padding:0;
+  
+    
+  
+}
+body {
+    position:relative;
+    font-family: "inter tight";
+    letter-spacing: 0.05em;
+    background-color: $lightprim;
+    
+}
+
+*, ::after, ::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+.inner{
+  max-width: 1500px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.fancy{
+  background: $fancygrad;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+

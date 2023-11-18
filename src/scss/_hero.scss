@@ -1,0 +1,160 @@
+.hero{
+    background-color: $dark;
+    min-height: 100vh;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.521));
+    .inner{
+        padding-top: 150px;
+        .main{
+            margin-bottom: 80px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            border-radius: 100px;
+            overflow: hidden;
+            position: relative;
+            filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.521));
+            &::before{
+                position: absolute;
+                content: "";
+                inset: 0;
+                background-color: rgba($color: #000000, $alpha: 0.25);
+            }
+            .left{
+                padding: 50px;
+                position: relative;
+                z-index: 1;
+                padding-right: 200px;
+                .heading{
+                    color: white;
+                    font-size: 80px;
+                    font-weight: 700;
+                    letter-spacing: 0;
+                    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.39));
+                }
+                .hero-features-slider{
+                    margin-bottom: 30px;
+                    .feature{
+                        color: white;
+                        font-size: 80px;
+                        font-weight: 700;
+                        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.336));
+                        letter-spacing: 0;
+                    }
+                }
+                .description{
+                    color: white;
+                    font-size: 18px;
+                    line-height: 150%;
+                    font-weight: 100;
+                    margin-bottom: 30px;
+                }
+                .button{
+                    color: black;
+                    background-color: white;
+                    border-radius: 45px;
+                    padding: 20px 30px;
+                    font-weight: 500;
+                    transition: 100ms ease-in-out;
+                    &:hover{
+                        transition: 100ms ease-in-out;
+                        background-color: $pink;
+                        color: white;
+                    }
+                    &:active{
+                        transition: 100ms ease-in-out;
+                        background-color: $pink;
+                        box-shadow: inset 0 0 10px black;
+                        color: white;
+                    }
+                }
+            }
+            .right{
+                position: relative;
+                z-index: 1;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                .mockup{
+                    margin-bottom: -5px;
+                }
+                .popup1{
+                    position: absolute;
+                    top: 10%;
+                    left: 0;
+                    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.521));
+                    width: 25%;
+                }
+                .popup2{
+                    position: absolute;
+                    bottom: 32%;
+                    right: 30%;
+                    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.521));
+                    width: 25%;
+                }
+                .card{
+                    position: absolute;
+                    top: 35%;
+                    left: -10%;
+                    display: flex;
+                    padding: 10px;
+                    border-radius: 10px;
+                    background-color: rgba($color: #000000, $alpha: 0.3);
+                    backdrop-filter: blur(5px);
+                    grid-gap: 10px;
+                    .card-left{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            border-radius: 50%;
+                            width: 80px;
+                        }
+                    }
+                    .card-right{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-end;
+                        div{
+                            text-align: end;
+                            color: white;
+                            font-size: 12px;
+                            font-weight: 100;
+                            margin-bottom: 5px;
+                            &.name{
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .stats{
+            margin: 0 auto;
+            max-width: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .text{
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            .number{
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                font-weight: 700;
+                background: $fancygrad;
+                border-radius: 45px;
+                padding: 5px 50px;
+                margin-bottom: 80px;
+            }
+        }
+    }
+}

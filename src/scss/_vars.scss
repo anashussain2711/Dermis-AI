@@ -1,0 +1,22 @@
+/* @import must be at top of file, otherwise CSS will not work */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;400;700;900&display=swap');
+// Breakpoints Structure
+$custom-breakpoints: (
+    xs: (minSize: 0px, maxSize: 575px, maxContWidth: 0px, name: 'XS'),
+    sm: (minSize: 576px, maxSize: 767px, maxContWidth: 719px, name: 'SM'),
+    md: (minSize: 768px, maxSize: 991px, maxContWidth: 720px, name: 'MD'),
+    lg: (minSize: 992px, maxSize: 1249px, maxContWidth: 960px, name: 'LG'),
+    xl: (minSize: 1250px, maxSize: 1499px, maxContWidth: 1250px, name: 'XL'),
+    max: (minSize: 1500px, maxSize: 0px, maxContWidth: 1201px, name: 'MAX')
+); 
+
+$dark: rgb(26, 34, 33);
+$darkprim: #197278ff;
+$pink: #ff0166ff;
+$lightpink: #edddd4ff;
+$lightprim: #bde3e5;
+
+$maingrad: linear-gradient(135deg, $darkprim, #67c0c7);
+$fancygrad: linear-gradient(135deg, #1c929b 20%, $pink);
+
